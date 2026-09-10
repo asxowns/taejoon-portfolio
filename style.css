@@ -849,7 +849,16 @@ p {
   }
 
   .project-visual {
-    max-width: 760px;
+    max-width: 100%;
+  }
+
+  .about-intro{
+    height:auto;
+    min-height:auto;
+  }
+
+  .page-number{
+    bottom: 18px;
   }
 }
 
