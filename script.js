@@ -27,7 +27,7 @@
       root: null,
       rootMargin: "-42% 0px -42% 0px",
       threshold: [0, 0.25, 0.5, 0.75, 1],
-    }
+    },
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
@@ -43,7 +43,7 @@
   updateProgress();
 
   document.querySelectorAll(".device-toggle").forEach((toggle) => {
-    const preview = toggle.nextElementSibling;
+    const preview = toggle.closest(".project-visual").querySelector(".device-preview");
     const buttons = Array.from(toggle.querySelectorAll("button"));
 
     buttons.forEach((button) => {
